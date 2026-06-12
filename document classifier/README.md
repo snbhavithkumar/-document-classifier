@@ -39,53 +39,17 @@ Save to SQLite history
 ## Project structure
 
 Document-Classifier/
-│
-├── app.py                          # Flask web application
-├── train.py                        # Model training script
-├── database.py                     # SQLite database setup
-├── requirements.txt                # Python dependencies
-├── Procfile                        # Render deployment config
-├── render.yaml                     # Render blueprint config
-├── runtime.txt                     # Python runtime version
-├── predictions.db                  # SQLite prediction history
-├── .gitignore
+Document-Classifier
 ├── README.md
-├── DEPLOY.md
-├── Document-Classifier.code-workspace
-│
+├── app.py
+├── train.py
+├── requirements.txt
+├── dataset/
 ├── model/
-│   ├── classifier.pkl              # Trained Logistic Regression model
-│   └── vectorizer.pkl              # TF-IDF vectorizer
-│
-├── scripts/
-│   └── expand_training_data.py     # Data augmentation script
-│
 ├── static/
-│   ├── style.css                   # Application styling
-│   ├── confusion_matrix.png        # Model evaluation visualization
-│   └── metrics.json                # Accuracy & F1-score metrics
-│
 ├── templates/
-│   ├── index.html                  # Classification interface
-│   └── history.html                # Prediction history page
-│
-├── data/                           # Training/reference data
-│
-└── dataset/
-    └── dataset.csv                 # Labeled training dataset
-
-
-## 
-in shot 
-
-    Document Classifier
-├── Backend (Flask)
-├── Machine Learning (Scikit-learn)
-├── Database (SQLite)
-├── Frontend (HTML, CSS, Bootstrap)
-├── Dataset
-├── Trained Models
-└── Deployment (Render)
+├── scripts/
+└── docs/
 
 
 
