@@ -38,18 +38,45 @@ Save to SQLite history
 
 ## Project structure
 
+## Project Structure
+
+```text
 Document-Classifier/
-Document-Classifier
-├── README.md
+│
 ├── app.py
 ├── train.py
+├── database.py
+│
 ├── requirements.txt
+├── README.md
+├── .gitignore
+├── Procfile
+├── render.yaml
+├── runtime.txt
+│
 ├── dataset/
+│   └── dataset.csv
+│
 ├── model/
-├── static/
-├── templates/
+│   ├── classifier.pkl
+│   └── vectorizer.pkl
+│
 ├── scripts/
+│   └── expand_training_data.py
+│
+├── static/
+│   ├── style.css
+│   ├── confusion_matrix.png
+│   └── metrics.json
+│
+├── templates/
+│   ├── index.html
+│   └── history.html
+│
 └── docs/
+    ├── homepage.png
+    └── prediction-result.png
+```
 
 
 
